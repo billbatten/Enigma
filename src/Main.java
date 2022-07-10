@@ -1,5 +1,8 @@
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Start here ");
+
+        Enigma enigma = new Enigma(new String[]{"I", "II", "III"}, "B", new int[]{1, 2, 3}, new int[]{1, 2, 3},
+                "AB CD EF");
     }
 }
