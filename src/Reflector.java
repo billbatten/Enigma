@@ -8,8 +8,9 @@ public class Reflector {
         switch (reflectorChoice) {
             case "B":
                 return new Reflector("B", "YRUHQSLDPXNGOKMIEBFZCWVJAT");
-            case "C":
+            case "C":                                                 //ABCDEFGHIJKLMNOPQRSTUVWYXZ
                 return new Reflector("C", "FVPJIAOYEDRZXWGCTKUQSBNMHL");
+                                                                      //ABCDEFGHIJKLMNOPQRSTUVWYXZ
         }
         return null;
     }
