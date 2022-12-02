@@ -1,11 +1,10 @@
-import java.sql.SQLOutput;
-
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Throwable {
 
-        Enigma enigma = new Enigma(new String[]{"III", "II", "I"}, "B", new int[]{0, 4, 16}, new int[]{1, 2, 3},
-                new String[]{"AB", "CD", "EF"});
+        //User selected machine settings
+        Enigma enigma = new Enigma(new String[]{"I", "II", "IV"}, "B", new int[]{0, 4, 16}, new int[]{1, 2, 3},
+                new String[]{"AB", "CD", "EF", "KS", "RP"}, "K");
 
         Rotor centreRotor = enigma.centreRotor;
         System.out.println("\n" + centreRotor.rotorConfiguration);

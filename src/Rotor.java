@@ -18,21 +18,20 @@ public class Rotor {
         switch(rotorNumber){
             case "I":
                 return new Rotor(rotorNumber, "EKMFLGDQVZNTOWYHXUSPAIBRCJ", ringSetting, currentLetter, 16);
-            case "II":
+            case "II":                                     //ABCDEFGHIJKLMNOPQRSTUVWYXZ
                 return new Rotor(rotorNumber,"AJDKSIRUXBLHWTMCQGZNPYFVOE", ringSetting, currentLetter, 4);
-            case "III":
+            case "III":                                   //ABCDEFGHIJKLMNOPQRSTUVWYXZ
                 return new Rotor(rotorNumber,"BDFHJLCPRTXVZNYEIWGAKMUSQO", ringSetting, currentLetter, 21);
-            case "IV":
+            case "IV":                                    //ABCDEFGHIJKLMNOPQRSTUVWYXZ
                 return new Rotor(rotorNumber,"ESOVPZJAYQUIRHXLNFTGKDCMWB", ringSetting, currentLetter, 9);
-            case "V":
+            case "V":                                     //ABCDEFGHIJKLMNOPQRSTUVWYXZ
                 return new Rotor(rotorNumber,"VZBRGITYUPSDNHLXAWMJQOFECK", ringSetting, currentLetter, 25);
+                                                          //ABCDEFGHIJKLMNOPQRSTUVWYXZ
         }
         return null;
     }
     
     public void moveRotor() {
-
-        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWYXZ";
         this.currentLetter = (this.currentLetter + 1) % 26;
 
     }
