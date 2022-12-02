@@ -20,7 +20,7 @@ public class Rotor {
                 return new Rotor(rotorNumber, "EKMFLGDQVZNTOWYHXUSPAIBRCJ", ringSetting, currentLetter, 16);
             case "II":
                 return new Rotor(rotorNumber,"AJDKSIRUXBLHWTMCQGZNPYFVOE", ringSetting, currentLetter, 4);
-            case "III":                                     //ABCDEFGHIJKLMNOPQRSTUVWYXZ
+            case "III":
                 return new Rotor(rotorNumber,"BDFHJLCPRTXVZNYEIWGAKMUSQO", ringSetting, currentLetter, 21);
             case "IV":
                 return new Rotor(rotorNumber,"ESOVPZJAYQUIRHXLNFTGKDCMWB", ringSetting, currentLetter, 9);
